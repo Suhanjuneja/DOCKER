@@ -2,7 +2,7 @@
 
 Docker is an open-source platform designed to automate the deployment, scaling, and management of applications within lightweight, portable containers. These containers encapsulate an application and its dependencies, ensuring consistent environments across development, testing, and production stages. Unlike traditional virtual machines, Docker containers share the host operating system's kernel, making them more efficient in terms of resource usage and startup time.
 
-
+![image alt](https://github.com/Suhanjuneja/DOCKER/blob/6d1dfccac0a1da011672bf37cbb859578fefaf88/DOCKER.png)
 
 **Docker has several key features and functions that enhance application development and deployment. Here are some of the most notable:**
 
