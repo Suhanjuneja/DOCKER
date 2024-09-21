@@ -54,27 +54,27 @@ In this tutorial, we’ll show you how to install NGINX on Linux. Open your Linu
 
 Next, run this command:
 
-sudo apt-get install nginx
+    sudo apt-get install nginx
 
 Then, enable your firewall with the following:
 
-sudo ufw enable
+    sudo ufw enable
 
 To verify NGINX is installed, run the following:
 
-nginx -v
+    nginx -v
 
 You can run the command below to find out if NGINX is running:
 
-sudo ufw status
+    sudo ufw status
 
 After running this command, you should see the following:
 
-status: active
+    status: active
 
 To check whether your NGINX server is working fine, run the following:
 
-sudo systemctl status nginx
+    sudo systemctl status nginx
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -82,62 +82,84 @@ sudo systemctl status nginx
 
 To install Docker on a remote server using PuTTY, you'll first need to ensure you have access to a Linux server (like Ubuntu, CentOS, etc.) via SSH. Here's a step-by-step guide:
 
-Step 1: Connect to Your Server
+**Step 1**: Connect to Your Server
 
-Open PuTTY.
+- Open PuTTY.
+- Enter the hostname or IP address of your server.
+- Click "Open" to initiate the connection.
+- Log in with your username and password.
+  
+**Step 2**: Update Your Package Index
 
-Enter the hostname or IP address of your server.
-Click "Open" to initiate the connection.
-Log in with your username and password.
-Step 2: Update Your Package Index
 Before installing Docker, it’s a good idea to update the package index:
 
-sudo apt update
-Step 3: Install Prerequisites
+    sudo apt update
+
+**Step 3**: Install Prerequisites
+
 For Ubuntu, install the required packages:
 
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    
 For CentOS, run:
 
-sudo yum install -y yum-utils
-Step 4: Add Docker’s Official GPG Key
+    sudo yum install -y yum-utils
+    
+**Step 4**: Add Docker’s Official GPG Key
+
 For Ubuntu:
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
 For CentOS:
 
-sudo rpm --import https://download.docker.com/linux/centos/gpg
-Step 5: Set Up the Stable Repository
+    sudo rpm --import https://download.docker.com/linux/centos/gpg
+
+**Step 5**: Set Up the Stable Repository
+
 For Ubuntu:
 
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    
 For CentOS:
 
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-Step 6: Install Docker
+    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    
+**Step 6**: Install Docker
+
 For Ubuntu:
 
-sudo apt update
-sudo apt install docker-ce
+    sudo apt update
+
+    sudo apt install docker-ce
+
 For CentOS:
 
-sudo yum install docker-ce
-Step 7: Start Docker
+    sudo yum install docker-ce
+    
+**Step 7:** Start Docker
+
 Enable and start the Docker service:
 
-sudo systemctl start docker
-sudo systemctl enable docker
-Step 8: Verify the Installation
+    sudo systemctl start docker
+    sudo systemctl enable docker
+
+**Step 8**: Verify the Installation
+
 Check if Docker is running:
 
-sudo systemctl status docker
+    sudo systemctl status docker
+
 You can also run a test container:
 
-sudo docker run hello-world
-Step 9: (Optional) Manage Docker as a Non-Root User
+    sudo docker run hello-world
+
+**Step 9**: (Optional) Manage Docker as a Non-Root User 
+
 If you want to run Docker commands without sudo, add your user to the Docker group:
 
-sudo usermod -aG docker $USER
+    sudo usermod -aG docker $USER
+
 After running this command, log out and back in for the changes to take effect
 
 
