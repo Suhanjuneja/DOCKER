@@ -40,3 +40,5 @@ Docker is an open-source platform designed to automate the deployment, scaling, 
 - **High Availability**: It can be configured for failover and redundancy, ensuring continuous service availability.
 
 - **Configurability**: NGINX uses a simple and flexible configuration file, making it easy to set up and customize.
+
+![image aly](https://github.com/Suhanjuneja/DOCKER/blob/b1e6af675ee9810de3b7158452b0ed9c1bd00ddf/NGINX-Professional-Services-Consulting-Support-1.png)
