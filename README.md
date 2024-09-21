@@ -23,6 +23,8 @@ Docker is an open-source platform designed to automate the deployment, scaling, 
 
    NGINX is a high-performance web server, reverse proxy server, and load balancer designed to handle high traffic and concurrent connections efficiently. Originally created to address the C10K problem (the challenge of handling 10,000 concurrent connections), NGINX is now widely used for serving static content, managing dynamic content, and improving the performance of web applications.
 
+![image alt](https://github.com/Suhanjuneja/DOCKER/blob/fe7c23ea21d90ec2212d9a635f32787397899c24/nginx.png)
+
    **Key Features**:
 
 -   **Reverse Proxy**: NGINX can act as a reverse proxy, forwarding client requests to backend servers, improving security and scalability.
