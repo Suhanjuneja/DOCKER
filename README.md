@@ -100,10 +100,7 @@ Before installing Docker, it’s a good idea to update the package index:
 For Ubuntu, install the required packages:
 
     sudo apt install apt-transport-https ca-certificates curl software-properties-common
-    
-For CentOS, run:
 
-    sudo yum install -y yum-utils
     
 **Step 4**: Add Docker’s Official GPG Key
 
@@ -111,9 +108,7 @@ For Ubuntu:
 
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-For CentOS:
 
-    sudo rpm --import https://download.docker.com/linux/centos/gpg
 
 **Step 5**: Set Up the Stable Repository
 
@@ -121,9 +116,6 @@ For Ubuntu:
 
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
     
-For CentOS:
-
-    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     
 **Step 6**: Install Docker
 
@@ -133,10 +125,6 @@ For Ubuntu:
 
     sudo apt install docker-ce
 
-For CentOS:
-
-    sudo yum install docker-ce
-    
 **Step 7:** Start Docker
 
 Enable and start the Docker service:
